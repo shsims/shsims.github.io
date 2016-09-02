@@ -1,0 +1,90 @@
+<html>
+<head><title>Homework 1</title>
+<style>
+body{
+/*background-image: url('https://i.ytimg.com/vi/PM9CQDlQI0A/maxresdefault.jpg');*/
+background: blue; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left,rgba(255,0,255,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+background: -moz-linear-gradient(right,rgba(255,255,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,255,1)); /*Standard*/
+border-style: dotted;
+border-width: 7px;
+border-color: purple;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+h1{
+color: black;
+font-family: "Times New Roman", Times, serif;
+font-style: oblique;
+}
+
+
+p{
+color: grey;
+}
+
+button.accordion {
+background-color: #ffe;
+color: #454;
+cursor: pointer;
+padding: 10px;
+width: 80%;
+text-align: left;
+border: none;
+outline: solid;
+transition: 0.6s;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+background-color: grey;
+}
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+padding: 0 300px;
+background-color: white;
+display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+display: block;
+}
+img{
+filter:saturate(5);
+}
+</style>
+</head>
+<script type="text/javascript">
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+acc[i].onclick = function(){
+this.classList.toggle("active");
+this.nextElementSibling.classList.toggle("show");
+}
+}
+</script>
+<body>
+<h1> SKYLAR SIMS </h1>
+<p>Hello and welcome to the story. I have added an image extension that suggests humans will relate the most</p>
+<img src="https://38.media.tumblr.com/a16fd009a1ba2a5d764bcb4e764b9e81/tumblr_n3s4l1exPs1rlergfo4_500.gif">
+<button class="accordion">Home</button>
+<div class="panel">
+<p>Hello to everybody out there<br>my name is Jerry Santrusky<br> does anyone know what<br> today is. </p>
+</div>
+
+<button class="accordion">About</button>
+<div class="panel">
+<p>Charting on the <br> top of the heights <br> I am trying to figure out<br>
+what to do. </p>
+</div>
+<button class="accordion">Contact</button>
+<div class="panel">
+<p>Do not call me whatsoever!!!</p>
+</div>
+</body>
+</html>
